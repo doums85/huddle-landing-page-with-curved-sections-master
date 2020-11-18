@@ -1,4 +1,4 @@
-@media (min-width: 610px) and (max-width: 800px) {
+@media (min-width: 610px) and (max-width: 1024px) {
 
     /*    header*/
     header button {
@@ -20,6 +20,7 @@
 
     /*advantage image*/
     .advantage img {
+        grid-row: 1/2;
         display: block;
         min-width: 60vw;
         margin: 0 auto;
@@ -29,6 +30,7 @@
         grid-template-columns: 80vw;
         grid-template-rows: repeat(2,auto);
         grid-row-gap: 4rem;
+        text-align: center;
     }
     /*::before background image*/
     #wrapper-grow::before {
@@ -36,9 +38,10 @@
         content: "";
         background: url(images/bg-section-top-mobile-1.svg) no-repeat;
         background-size: cover;
+        background-position: center;
         position: absolute;
-        height: 14.5rem;
-        top: -13rem;
+        min-height: 18rem;
+        top: -15rem;
     }
 
     #wrapper-user::before {
@@ -47,9 +50,10 @@
         content: "";
         background: url(images/bg-section-top-mobile-1.svg) no-repeat;
         background-size: cover;
+        background-position: center;
         position: absolute;
-        height: 14.5rem;
-        top: -13rem;
+        min-height: 18rem;
+        top: -15rem;
     }
 
     /*::after background image*/
@@ -60,8 +64,7 @@
         background-position: center;
         background-size: cover;
         position: absolute;
-        height: 13rem;
-        bottom: -9rem;
+        min-height: 13rem;
     }
 
     #wrapper-user::after {
@@ -69,10 +72,10 @@
         content: "";
         background: url(images/bg-section-bottom-mobile-2.svg) no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         position: absolute;
-        height: 14rem;
-        bottom: -12rem;
+        min-height: 18rem;
+     
     }
 
     /*newsletter*/
@@ -81,7 +84,7 @@
         background-position: center;
         background-size: contain;
         content: " ";
-        height: 10rem;
+        min-height: 10rem;
         width: 100vw;
         position: absolute;
         top: -7rem;
@@ -135,11 +138,20 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 609px) {
 
+
+
+@media (min-width: 320px) and (max-width: 609px) {
+    
+    #grid-container{
+        margin-top: 2rem;
+    }
     /*    header*/
+    header img{
+        max-width: 40vw;
+    }
     header button {
-        min-width: 20vw;
+        min-width: 25vw;
     }
 
     #subtext p {
@@ -154,18 +166,20 @@
     #banner {
         min-width: 80vw;
     }
-
-    .text-number {
-        font-size: .9rem;
+    #number{
+        min-width: 80vw;
+        display: grid;
+        grid-template-columns: auto;
+        grid-row-gap: 5rem;
+        justify-content: center;
+        margin: 0 auto;
     }
-
-    .text-number h1 {
-        font-size: 3rem;
+    #number h1{
         text-align: left;
     }
-
     /*advantage image*/
     .advantage img {
+        grid-row: 1/2;
         display: block;
         min-width: 60vw;
         margin: 0 auto;
@@ -175,6 +189,7 @@
         grid-template-columns: 80vw;
         grid-template-rows: repeat(2,auto);
         grid-row-gap: 4rem;
+        text-align: center;
     }
     /*::before background image*/
     #wrapper-grow::before {
@@ -182,6 +197,7 @@
         content: "";
         background: url(images/bg-section-top-mobile-1.svg) no-repeat;
         background-size: cover;
+        background-position: center;
         position: absolute;
         height: 14.5rem;
         top: -13rem;
@@ -193,6 +209,7 @@
         content: "";
         background: url(images/bg-section-top-mobile-1.svg) no-repeat;
         background-size: cover;
+        background-position: center;
         position: absolute;
         height: 14.5rem;
         top: -13rem;
@@ -206,7 +223,7 @@
         background-position: center;
         background-size: cover;
         position: absolute;
-        height: 13rem;
+        min-height: 13rem;
         bottom: -9rem;
     }
 
@@ -215,25 +232,26 @@
         content: "";
         background: url(images/bg-section-bottom-mobile-2.svg) no-repeat;
         background-position: center;
-        background-size: contain;
+        background-size: cover;
         position: absolute;
-        height: 14rem;
-        bottom: -12rem;
+        min-height: 14rem;
     }
 
-    /*newsletter*/
     #footer-menu::before {
         background: url("/images/bg-footer-top-mobile.svg") no-repeat;
         background-position: center;
         background-size: contain;
         content: " ";
-        height: 10rem;
+        min-height: 10rem;
         width: 100vw;
         position: absolute;
-        top: -7rem;
+        top: -6rem;
     }
-
-
+/*call to action*/
+    #call-to-action{
+        padding-bottom: 5rem;
+    }
+/*footer*/
     #footer-container {
         grid-template-columns: auto;
         grid-template-rows: repeat(3, auto);
@@ -277,6 +295,6 @@
     }
 
     #icons-social {
-        grid-column-gap: 1.5rem;
+        grid-column-gap: 2rem;
     }
 }
