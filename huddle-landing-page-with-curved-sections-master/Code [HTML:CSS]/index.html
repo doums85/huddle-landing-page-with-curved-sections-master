@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link  rel = " stylesheet " href = " https://unpkg.com/aos@next/dist/aos.css "/>
+    <!--link css-->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            width: 100vw;
+            font-size: .9rem;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            padding: .5rem;
+            color: white;
+        }
+
+        .attribution a {
+            color: hsl(322, 100%, 66%);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="grid-container">
+        <section id="header">
+            <header>
+                <img src="images/logo.svg" alt="logo"data-aos="fade-right">
+                <button data-aos="fade-right"><a href="#">Try it free</a></button>
+            </header>
+
+            <!--heading-->
+            <div id="heading">
+                <div id="subtext">
+                    <h1 data-aos="fade-up-left">Build The Community Your Fans Will Love</h1>
+                    <p data-aos="fade-up-left">Huddle re-imagines the way we build communities. You have a voice, but so does
+                        your audience. Create connections with your users as you engage in genuine discussion.</p>
+                    <button data-aos="fade-up-left"><a href="#"  data-aos-delay="500"data-aos="fade-up-left" >Get Started For Free</a></button>
+                </div>
+                <img id="banner" src="images/screen-mockups.svg" alt="screen mockups" data-aos-delay="500"data-aos="flip-down">
+                <div id="number">
+                    <div id="left" data-aos="fade-down-right">
+                        <img src="images/icon-communities.svg" alt="communities">
+                        <div class="text-number">
+                            <h1>1.4k+</h1>
+                            <p>Communities Formed</p>
+                        </div>
+                    </div>
+                    <div id="right" data-aos="fade-down-left">
+                        <img src="images/icon-messages.svg" alt="messages">
+                        <div class="text-number">
+                            <h1>2.7m+</h1>
+                            <p>Messages Sent</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--advantage-->
+        <section id="wrapper-advantage">
+            <div id="wrapper-grow" data-aos="flip-left">
+                <div class="advantage">
+                    <div class="subtext-advantage">
+                        <h2>Grow Together</h2>
+                        <p> Generate meaningful discussions with your audience and build a strong, loyal community.
+                            Think of the insightful conversations you miss out on with a feedback form.</p>
+                    </div>
+                    <img src="images/illustration-grow-together.svg" alt="grow together">
+                </div>
+            </div>
+
+            <div id="wrapper-conversation" data-aos="flip-right">
+                <div class="advantage">
+                    <img src="images/illustration-flowing-conversation.svg" alt="flowing conversation">
+                    <div class="subtext-advantage">
+                        <h2>Flowing Conversations</h2>
+                        <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have
+                            just-in-time loading for a more natural flow.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wrapper-user" data-aos="flip-left">
+                <div class="advantage">
+                    <div class="subtext-advantage">
+                        <h2>Your Users</h2>
+                        <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means,
+                            once signed in to your app, your users can start chatting immediately.</p>
+                    </div>
+                    <img src="images/illustration-your-users.svg" alt="your users">
+                </div>
+            </div>
+        </section>
+
+
+
+        <!--call to action-->
+        <section id="call-to-action" data-aos="zoom-out">
+            <h2 data-aos="fade-up-left" data-aos-delay="500">Ready To Build Your Community?</h2>
+            <button data-aos="flip-left" data-aos-delay="500"><a href="#">Get Started For Free</a></button>
+        </section>
+
+
+        <!--footer menu-->
+        <section id="footer-menu">
+            <!--left footer-->
+            <div id="footer-container">
+                <div id="left-footer"data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+                    <img src="images/whitelogo.svg" alt="logo">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia
+                        vestibulum a, ultrices quis sem.</p>
+
+                    <div id="phone">
+                        <img src="images/icon-phone.svg" alt="phone">
+                        <p>Phone: +1-543-123-4567</p>
+                    </div>
+
+                    <div id="email">
+                        <img src="images/icon-email.svg" alt="email">
+                        <p>example@huddle.com</p>
+                    </div>
+                </div>
+
+
+                <!--newsletter-->
+                <div id="newsletter" data-aos="flip-right"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+                    <h3>Newsletter</h3>
+                    <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never
+                        send you spam or pass on your email address</p>
+
+                    <!--form + button-->
+                    <form id="myForm">
+                        <input id="tape" name="email1" type="email" data-aos="zoom-in-right" data-aos-delay="800">
+                        <submit>
+                            <button>
+                                <a href="#">Subscribe</a>
+                            </button>
+                        </submit>
+                    </form>
+                </div>
+
+                <!--icons-->
+                <div id="icons-social" data-aos="fade-up"
+     data-aos-anchor-placement="center-center">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter-square fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <p class="attribution" data-aos="flip-down" data-aos-delay="800">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            Coded by <a href="#">Seck Mamadou Faye</a>
+        </p>
+    </footer>
+     < script  src = " https://unpkg.com/aos@next/dist/aos.js " > </ script > 
+  < script > 
+    AOS . init ( ) ; 
+  </ script >
+</body>
+
+</html>

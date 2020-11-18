@@ -1,0 +1,282 @@
+@media (min-width: 610px) and (max-width: 800px) {
+
+    /*    header*/
+    header button {
+        min-width: 20vw;
+    }
+
+    #subtext p {
+        max-width: 80vw;
+    }
+
+    #subtext button,
+    #call-to-action button {
+        min-width: 30vw;
+    }
+
+    #banner {
+        width: 80vw;
+    }
+
+    /*advantage image*/
+    .advantage img {
+        display: block;
+        min-width: 60vw;
+        margin: 0 auto;
+    }
+/*advantage*/
+    .advantage{
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(2,auto);
+        grid-row-gap: 4rem;
+    }
+    /*::before background image*/
+    #wrapper-grow::before {
+        width: 100vw;
+        content: "";
+        background: url(images/bg-section-top-mobile-1.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 14.5rem;
+        top: -13rem;
+    }
+
+    #wrapper-user::before {
+        width: 100vw;
+        height: 8rem;
+        content: "";
+        background: url(images/bg-section-top-mobile-1.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 14.5rem;
+        top: -13rem;
+    }
+
+    /*::after background image*/
+    #wrapper-grow::after {
+        width: 100vw;
+        content: "";
+        background: url(images/bg-section-bottom-mobile-1.svg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        height: 13rem;
+        bottom: -9rem;
+    }
+
+    #wrapper-user::after {
+        width: 100vw;
+        content: "";
+        background: url(images/bg-section-bottom-mobile-2.svg) no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        height: 14rem;
+        bottom: -12rem;
+    }
+
+    /*newsletter*/
+    #footer-menu::before {
+        background: url("/images/bg-footer-top-mobile.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+        content: " ";
+        height: 10rem;
+        width: 100vw;
+        position: absolute;
+        top: -7rem;
+    }
+
+
+    #footer-container {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    /*newsletter*/
+    #newsletter {
+        grid-row: 1/2;
+        display: grid;
+        grid-row-gap: 2rem;
+    }
+
+    #newsletter h3 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #newsletter button {
+        width: 30vw;
+        margin-top: 1.5rem;
+    }
+
+    #newsletter button a {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #tape {
+        width: 70vw;
+    }
+
+    #newsletter button,
+    #tape {
+        padding: 1rem;
+    }
+
+    #icons-social {
+        grid-column-gap: 1.5rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 609px) {
+
+    /*    header*/
+    header button {
+        min-width: 20vw;
+    }
+
+    #subtext p {
+        max-width: 80vw;
+    }
+
+    #subtext button,
+    #call-to-action button {
+        min-width: 30vw;
+    }
+
+    #banner {
+        min-width: 80vw;
+    }
+
+    .text-number {
+        font-size: .9rem;
+    }
+
+    .text-number h1 {
+        font-size: 3rem;
+        text-align: left;
+    }
+
+    /*advantage image*/
+    .advantage img {
+        display: block;
+        min-width: 60vw;
+        margin: 0 auto;
+    }
+/*advantage*/
+    .advantage{
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(2,auto);
+        grid-row-gap: 4rem;
+    }
+    /*::before background image*/
+    #wrapper-grow::before {
+        width: 100vw;
+        content: "";
+        background: url(images/bg-section-top-mobile-1.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 14.5rem;
+        top: -13rem;
+    }
+
+    #wrapper-user::before {
+        width: 100vw;
+        height: 8rem;
+        content: "";
+        background: url(images/bg-section-top-mobile-1.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        height: 14.5rem;
+        top: -13rem;
+    }
+
+    /*::after background image*/
+    #wrapper-grow::after {
+        width: 100vw;
+        content: "";
+        background: url(images/bg-section-bottom-mobile-1.svg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        height: 13rem;
+        bottom: -9rem;
+    }
+
+    #wrapper-user::after {
+        width: 100vw;
+        content: "";
+        background: url(images/bg-section-bottom-mobile-2.svg) no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        height: 14rem;
+        bottom: -12rem;
+    }
+
+    /*newsletter*/
+    #footer-menu::before {
+        background: url("/images/bg-footer-top-mobile.svg") no-repeat;
+        background-position: center;
+        background-size: contain;
+        content: " ";
+        height: 10rem;
+        width: 100vw;
+        position: absolute;
+        top: -7rem;
+    }
+
+
+    #footer-container {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    /*newsletter*/
+    #newsletter {
+        grid-row: 1/2;
+        display: grid;
+        grid-row-gap: 2rem;
+    }
+
+    #newsletter h3 {
+        font-size: 1.5rem;
+    }
+
+    form {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #newsletter button {
+        width: 30vw;
+        margin-top: 1.5rem;
+    }
+
+    #newsletter button a {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    #tape {
+        width: 70vw;
+    }
+
+    #newsletter button,
+    #tape {
+        padding: 1rem;
+    }
+
+    #icons-social {
+        grid-column-gap: 1.5rem;
+    }
+}
